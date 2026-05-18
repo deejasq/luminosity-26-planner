@@ -1,0 +1,18 @@
+{
+  "name": "Luminosity Beach Festival 2026",
+  "short_name": "LBF26",
+  "description": "Festival timetable planner for Luminosity Beach Festival 2026",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1e1e22",
+  "theme_color": "#f5c842",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
