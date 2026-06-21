@@ -94,6 +94,28 @@ h1{font-family:"Bebas Neue",sans-serif;font-size:20px;color:var(--gold);letter-s
 .modal p{color:var(--silver);font-size:12px;line-height:1.6;margin-bottom:14px}
 .modal textarea{width:100%;height:80px;background:var(--card);border:1px solid var(--border);color:var(--text);font-family:monospace;font-size:11px;padding:10px;border-radius:6px;resize:none;outline:none;margin-bottom:14px}
 .modal-actions{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+@media(min-width:768px){
+  :root{--timew:66px;--stagew:275px;--priw:105px}
+  body{font-size:15px}
+  .tab{font-size:15px;padding:10px 20px}
+  .sh-stage{font-size:14px;letter-spacing:1.5px}
+  .sh-time{font-size:10px}
+  .act-name{font-size:14px;white-space:nowrap;text-overflow:ellipsis}
+  .act-tl{font-size:11px}
+  .pri-pill{font-size:11px;min-width:86px;padding:5px 8px}
+  h1{font-size:24px}
+  .btn{font-size:11px;padding:7px 13px}
+}
+@media(max-width:767px){
+  :root{--timew:40px;--stagew:118px;--priw:68px}
+  .act-name{font-size:10px}
+  .act-tl{font-size:8px}
+  .pri-pill{font-size:7px;min-width:58px;padding:3px 4px}
+  .sh-stage{font-size:10px;padding:7px 4px;letter-spacing:1px}
+  .sh-time{font-size:8px}
+  .tab{font-size:11px;padding:8px 10px;letter-spacing:1px}
+  .leg{font-size:9px;padding:2px 6px}
+}
 </style>
 </head>
 <body>
@@ -597,7 +619,7 @@ const DATA = {
         "Alignment"
       ]
     ],
-    "Beachclub Bernies (VII 10 Yrs)": [
+    "Beachclub Bernies": [
       [
         "12:00",
         "13:00",
@@ -883,7 +905,7 @@ const DATA = {
     ]
   }
 };
-const PX = 2;
+const PX = window.innerWidth >= 768 ? 3 : 2;
 const P_CLASS = {'Must See':'p-must','Want to See':'p-want','Interested':'p-int','Nope':'p-nope'};
 const ALL_P = ['p-must','p-want','p-int','p-nope','p-clash'];
 const OPTS = ['Must See','Want to See','Interested','Nope'];
