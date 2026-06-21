@@ -1,4 +1,4 @@
-const CACHE = 'lbf26-v2';
+const CACHE = 'lbf26-v3';
 const SHELL = ['./index.html', './manifest.json', './icon.svg'];
 
 self.addEventListener('install', e => {
